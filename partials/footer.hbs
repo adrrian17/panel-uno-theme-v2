@@ -1,32 +1,19 @@
-<div class="border-t border-t-gray-300 my-12">
-    <div class="flex justify-between mt-12 max-w-screen-xl mx-auto px-8">
-        <div class="flex items-center">
-            <a href="/">
-                <img class="max-w-[250px]" src="{{@site.logo}}" alt="{{@site.title}}" />
-            </a>
-            <div class="space-y-4 ml-6">
-                <span class="text-lg font-semibold font-barlow">Explorando <span class="text-brand-600">autores, cómics y nuevos mundos</span> en cada edición.</span>
-                {{> subscribe-form}}
-            </div>
+<div class="flex flex-col items-center bg-slate-100 px-8 mt-20">
+    <div class="flex flex-col items-center my-12">
+        <img class="max-w-[150px] mb-4" src="{{@site.logo}}" alt="{{@site.title}}" />
+        <div class="space-y-4">
+            <span class="text-xl font-semibold font-barlow">Explorando <span class="text-brand-600">autores, cómics y nuevos mundos</span> en cada edición.</span>
+            {{> subscribe-form}}
         </div>
-
-        <div class="flex space-x-12 font-barlow text-lg">
-            <div class="flex flex-col">
-                <span class="text-slate-900 font-semibold mb-4">Navegación</span>
-                <a class="text-brand-500 hover:underline underline-offset-4" href="#">Archivo</a>
-                <a class="text-brand-500 hover:underline underline-offset-4" href="#">Acerca De</a>
-                <a class="text-brand-500 hover:underline underline-offset-4" href="#">Creadores</a>
-                <a class="text-brand-500 hover:underline underline-offset-4" href="#">Glosario</a>
-                <a class="text-brand-500 hover:underline underline-offset-4" href="#">Contacto</a>
-            </div>
-            <div class="flex flex-col">
-                <span class="text-slate-900 font-semibold mb-4">Redes Sociales</span>
-                <a class="text-brand-500 hover:underline underline-offset-4" href="#">Archivo</a>
-                <a class="text-brand-500 hover:underline underline-offset-4" href="#">Acerca De</a>
-                <a class="text-brand-500 hover:underline underline-offset-4" href="#">Creadores</a>
-                <a class="text-brand-500 hover:underline underline-offset-4" href="#">Glosario</a>
-                <a class="text-brand-500 hover:underline underline-offset-4" href="#">Contacto</a>
-            </div>
+    </div>
+    <div class="flex justify-between py-6 items-center border-t w-full max-w-screen-lg border-t-slate-300">
+        <div>
+            <span class="text-lg font-barlow text-slate-400 mb-6">&copy; {{date format="YYYY"}} {{@site.title}} / Publicado con <a class="font-semibold hover:underline underline-offset-2" href="https://ghost.org" target="_blank" rel="noopener">Ghost</a></span>
+        </div>
+        <div class="flex space-x-4">
+                <a href="https://www.facebook.com/paneluno">{{> "icons/facebook"}}</a>
+                <a href="https://twitter.com/PanelUno">{{> "icons/twitter"}}</a>
+                <a href="https://instagram.com/paneluno">{{> "icons/instagram"}}</a>
         </div>
     </div>
 </div>
