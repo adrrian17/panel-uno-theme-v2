@@ -1,0 +1,58 @@
+<header>
+    <div class="flex items-center justify-between max-w-screen-xl px-8 py-2 mx-auto">
+        <div class="flex items-center">
+            <a href="/">
+                <img class="max-w-[150px]" src="{{@site.logo}}" alt="{{@site.title}}" />
+            </a>
+            <div class="items-center hidden ml-8 lg:flex">
+                {{navigation}}
+            </div>
+        </div>
+        <div class="flex items-center lg:hidden">
+            <button class="mr-6 gh-search" data-ghost-search>{{> "icons/search"}}</button>
+            <button @click="openMenu = !openMenu">
+                {{> "icons/menu"}}
+            </button>
+        </div>
+        <nav class="items-center justify-between hidden lg:flex">
+            <div class="flex items-center">
+                <button class="mr-6 gh-search" data-ghost-search>{{> "icons/search"}}</button>
+                {{#if @member}}
+                    <button
+                        class="text-white uppercase bg-brand-700 hover:bg-brand-800 focus:ring-4 focus:ring-brand-300 rounded-full px-5 py-2.5 me-2 mb-2 dark:bg-brand-600 dark:hover:bg-brand-700 focus:outline-none dark:focus:ring-brand-800 font-barlow font-semibold"
+                        data-portal="account">MI CUENTA</button>
+                {{else}}
+                    <button
+                        class="text-white uppercase bg-brand-700 hover:bg-brand-800 focus:ring-4 focus:ring-brand-300 rounded-full px-5 py-2.5 me-2 mb-2 dark:bg-brand-600 dark:hover:bg-brand-700 focus:outline-none dark:focus:ring-brand-800 font-barlow font-semibold"
+                        data-portal="signup">SUSCRÍBETE</button>
+                {{/if}}
+            </div>
+        </nav>
+        <nav class="fixed top-0 bottom-0 left-0 right-0 z-10 backdrop-blur-sm"
+            :class="openMenu ? 'visible' : 'invisible' " x-cloak>
+            <div class="absolute top-0 bottom-0 right-0 z-10 flex flex-col items-center justify-between w-10/12 py-16 transition-all bg-white"
+                :class="openMenu ? 'translate-x-0' : 'translate-x-full'">
+                <a href="/">
+                    <img class="max-w-[150px]" src="{{@site.logo}}" alt="{{@site.title}}" />
+                </a>
+                <div class="flex flex-col items-center">
+                    {{navigation}}
+                </div>
+                <div class="flex items-center">
+                    {{#if @member}}
+                        <button
+                            class="text-white uppercase bg-brand-700 hover:bg-brand-800 focus:ring-4 focus:ring-brand-300 rounded-full text-sm px-5 py-2.5 me-2 mb-2 dark:bg-brand-600 dark:hover:bg-brand-700 focus:outline-none dark:focus:ring-brand-800 font-barlow font-semibold"
+                            data-portal="account">MI CUENTA</button>
+                    {{else}}
+                        <button
+                            class="text-white uppercase bg-brand-700 hover:bg-brand-800 focus:ring-4 focus:ring-brand-300 rounded-full text-sm px-5 py-2.5 me-2 mb-2 dark:bg-brand-600 dark:hover:bg-brand-700 focus:outline-none dark:focus:ring-brand-800 font-barlow font-semibold"
+                            data-portal=" signup">SUSCRÍBETE</button>
+                    {{/if}}
+                </div>
+            </div>
+            <button class="absolute top-0 bottom-0 left-0 right-0" @click="openMenu = !openMenu">
+                {{> "icons/close"}}
+            </button>
+        </nav>
+    </div>
+</header>
