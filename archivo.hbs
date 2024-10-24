@@ -1,0 +1,12 @@
+{{!< default}}
+<div class="flex flex-col max-w-screen-xl px-8 mx-auto my-12">
+    <h1 class="text-4xl font-black uppercase heading font-barlow">Archivo</h1>
+    <p class="mt-4 mb-12 font-barlow text-xl">Las ediciones anteriores de Panel Uno</p>
+    <div class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+        {{#foreach posts visibility='all' filter="tag:-[hash-oculto]"}}
+            {{> card}}
+            {{else}}
+                <p class="text-lg font-barlow">Aún no hay ediciones publicadas.</p>
+        {{/foreach}}
+    </div>
+</div>

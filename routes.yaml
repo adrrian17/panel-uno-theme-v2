@@ -1,0 +1,7 @@
+routes:
+    /archivo/:
+        controller: channel
+        template: archivo
+
+taxonomies:
+    tag: /etiqueta/{slug}/
