@@ -34,3 +34,82 @@ production stylesheet in assets/built/screen.css using: npm run dev
     display: flex;
     align-items: center;
 }
+
+.post-content {
+    @apply font-merriweather;
+}
+
+.post-content p {
+    @apply leading-relaxed;
+}
+
+.post-content h2 {
+    @apply my-6 text-4xl leading-relaxed font-barlow font-black;
+}
+
+.post-content h3 {
+    @apply my-6 text-3xl leading-relaxed font-barlow font-black;
+}
+
+.post-content h4 {
+    @apply my-6 text-2xl leading-relaxed font-barlow font-black;
+}
+
+.post-content p a {
+    @apply hover:bg-brand-500 p-1 decoration-2 font-black hover:text-secondary-50 text-brand-500 underline hover:no-underline;
+}
+
+.post-content blockquote {
+    @apply my-6 py-1 px-6 border-l-4 border-l-brand-600 leading-loose italic;
+}
+
+.post-content hr {
+    @apply my-12;
+}
+
+.post-content ul {
+    list-style: revert;
+    margin-left: 1.1rem;
+    @apply my-6 leading-loose text-justify;
+}
+
+.post-content li {
+    @apply mb-1;
+}
+
+.post-sneak-peek {
+    position: relative;
+}
+
+.post-sneak-peek.fading:after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 80%;
+    background: linear-gradient(transparent, white 85%);
+}
+
+.gh-toc > .toc-list {
+    position: relative;
+    @apply text-xl;
+}
+
+.toc-list {
+    overflow: hidden;
+    list-style: none;
+    @apply font-barlow;
+}
+
+.toc-list li {
+    @apply my-2;
+}
+
+.gh-toc .is-active-link {
+    @apply text-brand-500 font-normal;
+}
+
+.gh-toc .is-active-link::before {
+    background-color: var(--ghost-accent-color);
+}
