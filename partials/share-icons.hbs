@@ -1,0 +1,23 @@
+<div class="border-y flex my-4 py-2 items-center justify-between">
+    <span class="font-barlow text-lg font-semibold">Compártelo:</span>
+    <div class="flex space-x-4">
+        <a href="https://twitter.com/intent/tweet?url={{url absolute='true'}}&amp;text={{encode title}}" target="_blank" rel="noopener">
+            {{> icons/twitter}}
+        </a>
+        <a href="https://www.facebook.com/sharer.php?u={{url absolute='true'}}" target="_blank" rel="noopener">
+            {{> icons/facebook}}
+        </a>
+        <a href="https://pinterest.com/pin/create/button/?url={{url absolute='true'}}&amp;media=&amp;description={{encode title}}" target="_blank" rel="noopener" data-pin-do="none">
+            {{> icons/pinterest}}
+        </a>
+        <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url={{url absolute='true'}}&amp;title={{encode title}}" target="_blank" rel="noopener">
+            {{> icons/linkedin}}
+        </a>
+        <a href="https://wa.me/?text={{url absolute='true'}}" target="_blank" rel="noopener">
+            {{> icons/whatsapp}}
+        </a>
+        <a href="mailto:?subject=¡Esto te podría gustar!&amp;body={{url absolute='true'}}">
+            {{> icons/mail}}
+        </a>
+    </div>
+</div>
