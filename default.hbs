@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href='https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;900' rel='stylesheet' />
     <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@400;600;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.30.0/tocbot.css">
     <title>{{{block "title"}}}{{#is "home"}}Panel Uno{{/is}}{{^is "home"}} | Panel Uno{{/is}}</title>
 
     {{ghost_head}}
@@ -41,6 +42,25 @@
 {{!-- <foot> --}}
 {{ghost_foot}}
 {{!-- Outputs important scripts - should always be included before closing body tag --}}
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.30.0/tocbot.min.js"></script>
 <script src="//unpkg.com/alpinejs" defer></script>
+<script>
+
+            var toc = document.querySelectorAll('.gh-toc');
+            var container = document.querySelectorAll('.gh-sidebar')
+
+            tocbot.init({
+                tocSelector: '.gh-toc',
+                contentSelector: '.post-content',
+                headingSelector: 'h1, h2, h3, h4',
+                hasInnerContainers: true,
+                collapseDepth: 6
+            });
+
+            if (toc[0].innerHTML != '') {
+                container[0].style.display = 'block'
+            }
+
+        </script>
 </body>
 </html>

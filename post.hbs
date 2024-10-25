@@ -4,7 +4,7 @@
 
 <article class="px-8 mx-auto mt-12 gh-article max-w-prose md:px-0">
 
-    <header class="mb-12">
+    <header>
 
         <div class="flex items-center justify-between">
             <time class="font-semibold prose uppercase text-brand-500 font-barlow" datetime="{{date format=" YYYY-MM-DD"}}">{{date format="MMMM D, YYYY"}}</time>
@@ -46,7 +46,7 @@
                 type="image/webp"
               >
               <img
-              class="rounded-xl"
+              class="rounded-t-xl"
                 srcset="
                 {{img_url feature_image size="xxs"}} 30w,
                 {{img_url feature_image size="xs"}} 100w,
@@ -61,6 +61,11 @@
             </picture>
         </figure>
     </header>
+
+    <aside class="hidden p-6 mb-6 gh-sidebar rounded-b-xl bg-slate-50">
+        <span class="text-2xl font-semibold font-barlow">En esta publicación:</span>
+        <div class="mt-6 gh-toc"></div>
+    </aside>
 
     <div class="prose post-content">
         {{content}}

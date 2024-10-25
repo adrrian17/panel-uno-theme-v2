@@ -68,9 +68,7 @@ production stylesheet in assets/built/screen.css using: npm run dev
 }
 
 .post-content ul {
-    list-style: revert;
-    margin-left: 1.1rem;
-    @apply my-6 leading-loose text-justify;
+    @apply my-6 leading-relaxed;
 }
 
 .post-content li {
@@ -103,11 +101,11 @@ production stylesheet in assets/built/screen.css using: npm run dev
 }
 
 .toc-list li {
-    @apply my-2;
+    @apply my-1 text-lg;
 }
 
 .gh-toc .is-active-link {
-    @apply text-brand-500 font-normal;
+    @apply text-brand-500 font-semibold;
 }
 
 .gh-toc .is-active-link::before {
