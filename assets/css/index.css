@@ -75,6 +75,10 @@ production stylesheet in assets/built/screen.css using: npm run dev
     @apply mb-1;
 }
 
+.post-content figcaption {
+    @apply text-base text-center font-semibold font-barlow text-slate-400;
+}
+
 .post-sneak-peek {
     position: relative;
 }
