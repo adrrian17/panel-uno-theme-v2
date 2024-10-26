@@ -7,6 +7,13 @@ export default {
                 merriweather: ['"Merriweather"'],
                 barlow: ['"Barlow Semi Condensed"'],
             },
+            typography: {
+                DEFAULT: {
+                    css: {
+                        img: false,
+                    },
+                },
+            },
             colors: {
                 brand: {
                     50: "#9cfaf8",
