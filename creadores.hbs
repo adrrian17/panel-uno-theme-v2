@@ -1,0 +1,11 @@
+{{!< default}}
+{{#contentFor "title"}}Creadores{{/contentFor}}
+<div class="flex flex-col max-w-screen-xl px-8 mx-auto my-12">
+    <h1 class="text-4xl font-black uppercase heading font-barlow">Creadores</h1>
+    <p class="mt-4 mb-12 text-xl font-barlow">Los creadores detrás de los cómics reseñados en Panel Uno</p>
+    <div class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4">
+        {{#foreach posts}}
+            {{> creador-card}}
+        {{/foreach}}
+    </div>
+</div>

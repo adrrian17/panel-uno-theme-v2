@@ -2,12 +2,18 @@ routes:
     /archivo/:
         controller: channel
         template: archivo
+        filter: tag:-creador
 
     /glosario/:
         data: page.glosario
         template: glosario
 
 collections:
+    /creadores/:
+        permalink: /creadores/{slug}/
+        template: creadores
+        filter: tag:creador
+
     /:
         permalink: /{slug}/
         template: index
