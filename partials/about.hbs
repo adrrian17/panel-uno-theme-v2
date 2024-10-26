@@ -1,0 +1,24 @@
+<div class="bg-slate-100">
+   <div class="flex flex-col items-center max-w-screen-lg p-12 mx-auto space-y-12 lg:justify-center lg:space-y-0 lg:space-x-12 lg:flex-row bg-slate-100">
+        {{#get "pages" filter="tag:hash-about"}}
+            {{#foreach pages}}
+                <figure>
+                    <picture>
+                    <img src="{{img_url feature_image}}" alt="{{#if feature_image_alt}}{{feature_image_alt}}{{else}}{{title}}{{/if}}">
+                    </picture>
+                </figure>
+                <div class="font-barlow">
+                    <h2 class="text-4xl font-black ">{{title}}</h2>
+                    <div class="my-4 text-lg prose">
+                        {{content}}
+                    </div>
+                    <div class="flex space-x-4">
+                        <a class="hover:text-slate-400" href="https://www.facebook.com/paneluno">{{> "icons/facebook"}}</a>
+                        <a class="hover:text-slate-400" href="https://twitter.com/PanelUno">{{> "icons/twitter"}}</a>
+                        <a class="hover:text-slate-400" href="https://instagram.com/paneluno">{{> "icons/instagram"}}</a>
+                    </div>
+                </div>
+            {{/foreach}}
+        {{/get}}
+    </div>
+</div>
