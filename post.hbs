@@ -88,14 +88,16 @@
 </article>
 
 {{#get "posts" include="tags" limit="3" filter="id:-{{id}}+tag:{{primary_tag.slug}}"}}
-    <section class="max-w-screen-xl mx-auto mt-8 px-8">
-        <span class="text-4xl font-black uppercase font-barlow">Otras Ediciones</span>
-        <div class="grid grid-cols-1 gap-6 mt-6 md:grid-cols-2 lg:grid-cols-3">
-            {{#foreach posts}}
-                {{> card}}
-            {{/foreach}}
-        </div>
-    </section>
+    {{#if posts}}
+        <section class="max-w-screen-xl px-8 mx-auto mt-8">
+            <span class="text-4xl font-black uppercase font-barlow">Otras Ediciones</span>
+            <div class="grid grid-cols-1 gap-6 mt-6 md:grid-cols-2 lg:grid-cols-3">
+                {{#foreach posts}}
+                    {{> card}}
+                {{/foreach}}
+            </div>
+        </section>
+    {{/if}}
 {{/get}}
 
 {{/post}}
