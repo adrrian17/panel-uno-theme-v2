@@ -1782,6 +1782,307 @@ production stylesheet in assets/built/screen.css using: npm run dev
   background-color: var(--ghost-accent-color);
 }
 
+.kg-card {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.kg-bookmark-container {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 0.75rem;
+  font-family: "Barlow Semi Condensed";
+  --tw-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+a.kg-bookmark-container {
+  display: flex !important;
+  flex-direction: row !important;
+  border-radius: 0.75rem !important;
+}
+
+.kg-bookmark-content {
+  width: 66.666667%;
+  padding: 1rem;
+}
+
+.kg-bookmark-title {
+  font-family: "Barlow Semi Condensed" !important;
+  font-size: 1.125rem !important;
+  line-height: 1.75rem !important;
+  font-weight: 900 !important;
+}
+
+.kg-bookmark-description {
+  margin-top: 0.5rem !important;
+  overflow: hidden !important;
+  font-size: 1rem !important;
+  line-height: 1.5rem !important;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+.kg-bookmark-metadata {
+  margin-top: 1rem !important;
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+  font-family: "Barlow Semi Condensed" !important;
+  font-size: 1rem !important;
+  line-height: 1.5rem !important;
+}
+
+.kg-bookmark-icon {
+  margin-right: 0.5rem;
+  height: 1.5rem;
+  width: 1.5rem;
+}
+
+.kg-bookmark-publisher::before {
+  content: "•";
+  margin: 0 0.5em;
+}
+
+.kg-bookmark-thumbnail {
+  display: flex;
+  height: auto;
+  width: 33.333333%;
+}
+
+.kg-bookmark-thumbnail img {
+  -o-object-fit: cover !important;
+     object-fit: cover !important;
+}
+
+.kg-file-card-container {
+  border-radius: 0.75rem !important;
+  --tw-border-opacity: 1 !important;
+  border-color: rgb(226 232 240 / var(--tw-border-opacity)) !important;
+  padding: 1rem !important;
+  --tw-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1) !important;
+  --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color) !important;
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow) !important;
+}
+
+.kg-file-card-icon:before {
+  background: none !important;
+}
+
+.kg-file-card-icon {
+  border-radius: 0.75rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(96 190 188 / var(--tw-bg-opacity));
+}
+
+.kg-file-card-icon svg {
+  color: #fff !important;
+}
+
+.kg-file-card-title {
+  font-family: "Barlow Semi Condensed";
+}
+
+.kg-file-card-caption {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  font-family: "Barlow Semi Condensed";
+}
+
+.kg-file-card-metadata {
+  font-family: "Barlow Semi Condensed";
+}
+
+.kg-file-card-contents {
+  --tw-text-opacity: 1;
+  color: rgb(17 24 39 / var(--tw-text-opacity));
+}
+
+.kg-header-card.kg-size-small {
+  border-width: 1px !important;
+  --tw-border-opacity: 1 !important;
+  border-color: rgb(96 190 188 / var(--tw-border-opacity)) !important;
+  background-color: transparent !important;
+}
+
+@media (min-width: 768px) {
+  .kg-header-card.kg-size-small {
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+  }
+}
+
+.kg-header-card.kg-size-small {
+  box-shadow: 3px 3px #316d6c !important;
+  min-height: 20vh !important;
+}
+
+.kg-header-card-header {
+  font-size: 1.5rem !important;
+  line-height: 2rem !important;
+  --tw-text-opacity: 1 !important;
+  color: rgb(0 0 0 / var(--tw-text-opacity)) !important;
+}
+
+.kg-header-card-subheader {
+  font-family: "Barlow Semi Condensed" !important;
+  font-size: 1.125rem !important;
+  line-height: 1.75rem !important;
+  --tw-text-opacity: 1 !important;
+  color: rgb(0 0 0 / var(--tw-text-opacity)) !important;
+}
+
+.kg-header-card-button {
+  --tw-bg-opacity: 1 !important;
+  background-color: rgb(106 200 198 / var(--tw-bg-opacity)) !important;
+  font-family: "Barlow Semi Condensed" !important;
+  font-size: 1.125rem !important;
+  line-height: 1.75rem !important;
+  --tw-text-opacity: 1 !important;
+  color: rgb(255 255 255 / var(--tw-text-opacity)) !important;
+}
+
+.kg-image-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (min-width: 640px) {
+  .kg-image-card {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .kg-image-card {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+}
+
+.kg-image-card figcaption {
+  margin-top: 0.5rem;
+  font-family: "Barlow Semi Condensed";
+  font-size: 1rem;
+  line-height: 1.5rem;
+  --tw-text-opacity: 1;
+  color: rgb(106 200 198 / var(--tw-text-opacity));
+}
+
+.kg-gallery-card {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.kg-width-wide {
+  position: relative;
+  width: 75vw;
+  min-width: 100%;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+  transform: translateX(calc(50vw - 50%));
+}
+
+.kg-width-wide img {
+  max-width: 85vw;
+}
+
+.kg-width-full img {
+  max-width: 100vw;
+}
+
+.kg-callout-card {
+  border-radius: 0.75rem !important;
+}
+
+.kg-callout-emoji {
+  line-height: 1.625 !important;
+}
+
+.kg-callout-text {
+  font-family: "Barlow Semi Condensed" !important;
+  font-size: 1.125rem !important;
+  line-height: 1.75rem !important;
+  line-height: 1.625 !important;
+}
+
+.kg-callout-text a {
+  text-decoration-line: underline;
+  text-decoration-thickness: 2px;
+}
+
+.kg-button-card a.kg-btn {
+  border-radius: 0.75rem !important;
+  font-family: "Barlow Semi Condensed" !important;
+  font-size: 1.125rem !important;
+  line-height: 1.75rem !important;
+  font-weight: 900 !important;
+}
+
+.kg-button-card a.kg-btn:visited {
+  box-shadow: 3px 3px #42a09e;
+}
+
+.kg-button-card a.kg-btn:focus {
+  box-shadow: 3px 3px #42a09e;
+}
+
+.kg-button-card a.kg-btn:active {
+  box-shadow: 2px 2px #42a09e;
+}
+
+.kg-product-card h4.kg-product-card-title {
+  font-family: "Barlow Semi Condensed" !important;
+}
+
+.kg-product-card-image {
+  border-radius: 0.75rem;
+}
+
+.kg-product-card .kg-product-card-description p {
+  font-family: "Barlow Semi Condensed" !important;
+  line-height: 1.625 !important;
+}
+
+.kg-product-card a.kg-product-card-btn-accent {
+  font-family: "Barlow Semi Condensed" !important;
+  --tw-text-opacity: 1 !important;
+  color: rgb(255 255 245 / var(--tw-text-opacity)) !important;
+}
+
+.kg-product-card-container {
+  border-radius: 0.75rem !important;
+  border-width: 1px !important;
+  --tw-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1) !important;
+  --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color) !important;
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow) !important;
+}
+
+.gh-post-upgrade-cta-content p a {
+  --tw-text-opacity: 1 !important;
+  color: rgb(255 255 255 / var(--tw-text-opacity)) !important;
+}
+
+.gh-post-upgrade-cta-content p a:hover {
+  background-image: none !important;
+  --tw-text-opacity: 1 !important;
+  color: rgb(255 255 255 / var(--tw-text-opacity)) !important;
+  text-decoration-line: underline !important;
+}
+
+.kg-embed-card {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
+}
+
 .hover\:bg-brand-800:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(76 170 168 / var(--tw-bg-opacity));

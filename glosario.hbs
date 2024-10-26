@@ -1,0 +1,38 @@
+{{!< default}}
+{{#contentFor "title"}}{{meta_title}}{{/contentFor}}
+{{#post}}
+
+    <article class="px-8 mx-auto mt-12 gh-article max-w-prose md:px-0">
+
+        <header>
+            <h1
+                class="my-4 text-5xl font-black text-center uppercase font-barlow"
+            >{{title}}</h1>
+
+            <p
+                class="mb-6 text-xl text-justify font-barlow"
+            >{{custom_excerpt}}</p>
+        </header>
+
+        <aside class="hidden p-6 mb-6 gh-sidebar rounded-xl bg-slate-100">
+            <span class="text-2xl font-semibold font-barlow">Índice:</span>
+            <div class="mt-6 gh-toc"></div>
+        </aside>
+
+        <div class="prose post-content">
+            {{content}}
+        </div>
+
+        <footer class="mt-12">
+
+            {{#if comments}}
+                <section>
+                    {{comments title="Comentarios"}}
+                </section>
+            {{/if}}
+
+        </footer>
+
+    </article>
+
+{{/post}}

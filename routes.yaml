@@ -3,5 +3,9 @@ routes:
         controller: channel
         template: archivo
 
+    /glosario/:
+        data: page.glosario
+        template: glosario
+
 taxonomies:
     tag: /etiqueta/{slug}/

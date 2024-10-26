@@ -115,3 +115,190 @@ production stylesheet in assets/built/screen.css using: npm run dev
 .gh-toc .is-active-link::before {
     background-color: var(--ghost-accent-color);
 }
+
+.kg-card {
+    @apply my-4;
+}
+
+.kg-bookmark-container {
+    @apply font-barlow rounded-xl my-4 shadow-xl;
+}
+
+a.kg-bookmark-container {
+    @apply flex flex-row rounded-xl !important;
+}
+
+.kg-bookmark-content {
+    @apply w-2/3 p-4;
+}
+
+.kg-bookmark-title {
+    @apply text-lg font-barlow font-black !important;
+}
+
+.kg-bookmark-description {
+    @apply mt-2 overflow-hidden text-base !important;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+}
+
+.kg-bookmark-metadata {
+    @apply flex flex-row items-center mt-4 overflow-hidden text-ellipsis font-barlow text-base !important;
+}
+
+.kg-bookmark-icon {
+    @apply h-6 w-6 mr-2;
+}
+
+.kg-bookmark-publisher::before {
+    content: "•";
+    margin: 0 0.5em;
+}
+
+.kg-bookmark-thumbnail {
+    @apply flex w-1/3 h-auto;
+}
+
+.kg-bookmark-thumbnail img {
+    @apply object-cover !important;
+}
+
+.kg-file-card-container {
+    @apply p-4 shadow-xl rounded-xl border-slate-200 !important;
+}
+
+.kg-file-card-icon:before {
+    background: none !important;
+}
+
+.kg-file-card-icon {
+    @apply bg-brand-600 rounded-xl;
+}
+
+.kg-file-card-icon svg {
+    color: #fff !important;
+}
+
+.kg-file-card-title {
+    @apply font-barlow;
+}
+
+.kg-file-card-caption {
+    @apply font-barlow py-2;
+}
+
+.kg-file-card-metadata {
+    @apply font-barlow;
+}
+
+.kg-file-card-contents {
+    @apply text-gray-900;
+}
+
+.kg-header-card.kg-size-small {
+    @apply md:py-0 border bg-transparent border-brand-600 !important;
+    box-shadow: 3px 3px #316d6c !important;
+    min-height: 20vh !important;
+}
+
+.kg-header-card-header {
+    @apply text-2xl text-black !important;
+}
+
+.kg-header-card-subheader {
+    @apply text-lg text-black font-barlow !important;
+}
+
+.kg-header-card-button {
+    @apply text-lg bg-brand-500 text-white font-barlow !important;
+}
+
+.kg-image-card {
+    @apply flex flex-col items-center sm:my-8 md:my-12;
+}
+
+.kg-image-card figcaption {
+    @apply text-brand-500 mt-2 font-barlow text-base;
+}
+
+.kg-gallery-card {
+    @apply my-12;
+}
+
+.kg-width-wide {
+    position: relative;
+    width: 75vw;
+    min-width: 100%;
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+    transform: translateX(calc(50vw - 50%));
+}
+
+.kg-width-wide img {
+    max-width: 85vw;
+}
+
+.kg-width-full img {
+    max-width: 100vw;
+}
+
+.kg-callout-card {
+    @apply rounded-xl !important;
+}
+
+.kg-callout-emoji {
+    @apply leading-relaxed !important;
+}
+
+.kg-callout-text {
+    @apply leading-relaxed font-barlow text-lg !important;
+}
+
+.kg-callout-text a {
+    @apply underline decoration-2;
+}
+
+.kg-button-card a.kg-btn {
+    @apply text-lg font-barlow font-black rounded-xl !important;
+}
+
+.kg-button-card a.kg-btn:visited {
+    box-shadow: 3px 3px #42a09e;
+}
+
+.kg-button-card a.kg-btn:focus {
+    box-shadow: 3px 3px #42a09e;
+}
+
+.kg-button-card a.kg-btn:active {
+    box-shadow: 2px 2px #42a09e;
+}
+
+.kg-product-card h4.kg-product-card-title {
+    @apply font-barlow !important;
+}
+
+.kg-product-card-image {
+    @apply rounded-xl;
+}
+
+.kg-product-card .kg-product-card-description p {
+    @apply font-barlow leading-relaxed !important;
+}
+
+.kg-product-card a.kg-product-card-btn-accent {
+    @apply font-barlow text-secondary-50 !important;
+}
+
+.kg-product-card-container {
+    @apply rounded-xl shadow-xl border !important;
+}
+
+.gh-post-upgrade-cta-content p a {
+    @apply text-white hover:bg-none hover:underline hover:text-white !important;
+}
+
+.kg-embed-card {
+    @apply flex mx-auto justify-center;
+}
