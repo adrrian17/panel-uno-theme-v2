@@ -302,3 +302,7 @@ a.kg-bookmark-container {
 .kg-embed-card {
     @apply flex mx-auto justify-center;
 }
+
+.about a {
+    @apply underline decoration-2 decoration-brand-500;
+}
