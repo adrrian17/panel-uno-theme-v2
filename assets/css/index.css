@@ -133,7 +133,7 @@ a.kg-bookmark-container {
 }
 
 .kg-bookmark-title {
-    @apply text-lg font-barlow font-black !important;
+    @apply text-lg font-barlow font-semibold !important;
 }
 
 .kg-bookmark-description {
