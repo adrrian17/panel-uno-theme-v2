@@ -1,0 +1,16 @@
+{{!< default}}
+{{#contentFor "title"}}Acerca De{{/contentFor}}
+{{#post}}
+    <div class="px-8 mx-auto mt-12 gh-article max-w-prose md:px-0">
+        <div class="flex justify-center mb-12">
+            <figure class="max-w-[400px]">
+                <picture>
+                    <img src="{{@site.logo}}" alt="{{@site.title}}" />
+                </picture>
+            </figure>
+        </div>
+        <div class="prose post-content">
+            {{content}}
+        </div>
+    </div>
+{{/post}}
