@@ -2111,6 +2111,7 @@ a.kg-bookmark-container {
 }
 
 .about a {
+  font-weight: 600;
   text-decoration-line: underline;
   text-decoration-color: #6ac8c6;
   text-decoration-thickness: 2px;

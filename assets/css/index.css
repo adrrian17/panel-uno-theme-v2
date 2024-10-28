@@ -304,5 +304,5 @@ a.kg-bookmark-container {
 }
 
 .about a {
-    @apply underline decoration-2 decoration-brand-500;
+    @apply underline decoration-2 decoration-brand-500 font-semibold;
 }
