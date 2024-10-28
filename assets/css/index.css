@@ -9,10 +9,6 @@ production stylesheet in assets/built/screen.css using: npm run dev
 
 */
 
-a {
-    @apply underline decoration-2 decoration-brand-500 !important;
-}
-
 .form-wrapper .loader,
 .form-wrapper .success {
     display: none;

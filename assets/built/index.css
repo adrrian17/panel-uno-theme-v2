@@ -1645,12 +1645,6 @@ production stylesheet in assets/built/screen.css using: npm run dev
 
 */
 
-a {
-  text-decoration-line: underline !important;
-  text-decoration-color: #6ac8c6 !important;
-  text-decoration-thickness: 2px !important;
-}
-
 .form-wrapper .loader,
 .form-wrapper .success {
   display: none;
