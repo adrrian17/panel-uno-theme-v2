@@ -1645,6 +1645,12 @@ production stylesheet in assets/built/screen.css using: npm run dev
 
 */
 
+a {
+  text-decoration-line: underline !important;
+  text-decoration-color: #6ac8c6 !important;
+  text-decoration-thickness: 2px !important;
+}
+
 .form-wrapper .loader,
 .form-wrapper .success {
   display: none;
@@ -2040,6 +2046,7 @@ a.kg-bookmark-container {
 
 .kg-callout-text a {
   text-decoration-line: underline;
+  text-decoration-color: #6ac8c6;
   text-decoration-thickness: 2px;
 }
 
