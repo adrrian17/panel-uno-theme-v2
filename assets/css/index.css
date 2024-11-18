@@ -36,7 +36,7 @@ production stylesheet in assets/built/screen.css using: npm run dev
 }
 
 .post-content {
-    @apply font-merriweather;
+    @apply font-merriweather text-base md:text-lg;
 }
 
 .post-content p {
@@ -105,7 +105,7 @@ production stylesheet in assets/built/screen.css using: npm run dev
 }
 
 .toc-list li {
-    @apply my-1 text-lg;
+    @apply my-1 text-xl;
 }
 
 .gh-toc .is-active-link {

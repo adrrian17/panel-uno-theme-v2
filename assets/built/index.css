@@ -1673,6 +1673,15 @@ production stylesheet in assets/built/screen.css using: npm run dev
 
 .post-content {
   font-family: "Merriweather";
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .post-content {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
 }
 
 .post-content p {
@@ -1794,7 +1803,7 @@ production stylesheet in assets/built/screen.css using: npm run dev
 .toc-list li {
   margin-top: 0.25rem;
   margin-bottom: 0.25rem;
-  font-size: 1.125rem;
+  font-size: 1.25rem;
   line-height: 1.75rem;
 }
 
