@@ -1619,6 +1619,10 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.decoration-2 {
+  text-decoration-thickness: 2px;
+}
+
 .underline-offset-2 {
   text-underline-offset: 2px;
 }
