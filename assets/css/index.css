@@ -36,7 +36,7 @@ production stylesheet in assets/built/screen.css using: npm run dev
 }
 
 .post-content {
-    @apply font-merriweather text-base md:text-lg;
+    @apply font-merriweather;
 }
 
 .post-content p {
