@@ -19,8 +19,6 @@
 
         <h1 class="my-4 text-5xl font-black font-barlow">{{title}}</h1>
 
-        <p class="mb-6 text-xl text-justify font-barlow">{{custom_excerpt}}</p>
-
         <figure class="gh-feature-image">
             <picture>
               <source
@@ -62,10 +60,13 @@
         </figure>
     </header>
 
-    <aside class="hidden p-6 mb-6 gh-sidebar rounded-b-xl bg-slate-50">
-        <span class="text-2xl font-semibold font-barlow">Algunos de los cómics en que participó:</span>
-        <div class="mt-6 gh-toc"></div>
+    <aside class="p-6 mb-6 rounded-b-xl bg-brand-500">
+        <p class="text-xl text-justify font-barlow text-slate-50">{{custom_excerpt}}</p>
     </aside>
+
+    <div class="pt-4 mt-12 mb-6 border-t border-slate-200">
+        <h2 class="text-2xl font-bold font-barlow">Algunos de los cómics en los que ha participado:</h2>
+    </div>
 
     <div class="prose post-content">
         {{content}}
