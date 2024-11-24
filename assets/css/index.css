@@ -40,7 +40,7 @@ production stylesheet in assets/built/screen.css using: npm run dev
 }
 
 .post-content p {
-    @apply leading-relaxed;
+    @apply leading-relaxed text-justify;
 }
 
 .post-content h2 {
