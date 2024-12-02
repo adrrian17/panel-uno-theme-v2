@@ -125,7 +125,7 @@ production stylesheet in assets/built/screen.css using: npm run dev
 }
 
 a.kg-bookmark-container {
-    @apply flex flex-row rounded-xl !important;
+    @apply flex flex-row rounded-2xl !important;
 }
 
 .kg-bookmark-content {

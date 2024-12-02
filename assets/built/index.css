@@ -1851,7 +1851,7 @@ production stylesheet in assets/built/screen.css using: npm run dev
 a.kg-bookmark-container {
   display: flex !important;
   flex-direction: row !important;
-  border-radius: 0.75rem !important;
+  border-radius: 1rem !important;
 }
 
 .kg-bookmark-content {
